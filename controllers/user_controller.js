@@ -50,7 +50,7 @@ module.exports.createSession = function(req,res){
 // This function is used for making the new admin, it is admin specific, function
 module.exports.makeAdmin = async function(req,res){
     try {
-        if(req.body.admin_password == 'Ankita'){
+        if(req.body.admin_password == 'Happy'){
             let user = await User.findById(req.user.id);
             user.isAdmin= true;
             user.save();
